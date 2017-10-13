@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B733BF3D1F904F3B006AC304 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B733BF3C1F904F3B006AC304 /* Extentions.swift */; };
+		B733BF401F905209006AC304 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B733BF3F1F905209006AC304 /* ProfileViewController.swift */; };
 		B7A187741F9040640065B57E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A187731F9040640065B57E /* AppDelegate.swift */; };
-		B7A187761F9040640065B57E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A187751F9040640065B57E /* ViewController.swift */; };
+		B7A187761F9040640065B57E /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A187751F9040640065B57E /* CardsViewController.swift */; };
 		B7A187791F9040640065B57E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A187771F9040640065B57E /* Main.storyboard */; };
 		B7A1877B1F9040640065B57E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A1877A1F9040640065B57E /* Assets.xcassets */; };
 		B7A1877E1F9040640065B57E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A1877C1F9040640065B57E /* LaunchScreen.storyboard */; };
+		B7A187871F90446B0065B57E /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A187861F90446B0065B57E /* DraggableImageView.swift */; };
+		B7A187891F9044780065B57E /* DraggableImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7A187881F9044780065B57E /* DraggableImageView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B733BF3C1F904F3B006AC304 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		B733BF3F1F905209006AC304 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B7A187701F9040640065B57E /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A187731F9040640065B57E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7A187751F9040640065B57E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7A187751F9040640065B57E /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		B7A187781F9040640065B57E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7A1877A1F9040640065B57E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7A1877D1F9040640065B57E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7A1877F1F9040640065B57E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A187861F90446B0065B57E /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
+		B7A187881F9044780065B57E /* DraggableImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DraggableImageView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B733BF3E1F9051F0006AC304 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7A187751F9040640065B57E /* CardsViewController.swift */,
+				B733BF3F1F905209006AC304 /* ProfileViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		B7A187671F9040640065B57E = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +71,25 @@
 		B7A187721F9040640065B57E /* Tinder */ = {
 			isa = PBXGroup;
 			children = (
+				B733BF3E1F9051F0006AC304 /* View Controllers */,
+				B7A187851F90445C0065B57E /* Views */,
 				B7A187731F9040640065B57E /* AppDelegate.swift */,
-				B7A187751F9040640065B57E /* ViewController.swift */,
 				B7A187771F9040640065B57E /* Main.storyboard */,
 				B7A1877A1F9040640065B57E /* Assets.xcassets */,
 				B7A1877C1F9040640065B57E /* LaunchScreen.storyboard */,
 				B7A1877F1F9040640065B57E /* Info.plist */,
+				B733BF3C1F904F3B006AC304 /* Extentions.swift */,
 			);
 			path = Tinder;
+			sourceTree = "<group>";
+		};
+		B7A187851F90445C0065B57E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7A187861F90446B0065B57E /* DraggableImageView.swift */,
+				B7A187881F9044780065B57E /* DraggableImageView.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +153,7 @@
 			files = (
 				B7A1877E1F9040640065B57E /* LaunchScreen.storyboard in Resources */,
 				B7A1877B1F9040640065B57E /* Assets.xcassets in Resources */,
+				B7A187891F9044780065B57E /* DraggableImageView.xib in Resources */,
 				B7A187791F9040640065B57E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7A187761F9040640065B57E /* ViewController.swift in Sources */,
+				B733BF3D1F904F3B006AC304 /* Extentions.swift in Sources */,
+				B7A187761F9040640065B57E /* CardsViewController.swift in Sources */,
+				B733BF401F905209006AC304 /* ProfileViewController.swift in Sources */,
+				B7A187871F90446B0065B57E /* DraggableImageView.swift in Sources */,
 				B7A187741F9040640065B57E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +331,7 @@
 				B7A187841F9040640065B57E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
